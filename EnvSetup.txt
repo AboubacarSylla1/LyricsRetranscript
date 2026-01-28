@@ -1,0 +1,9 @@
+conda create -n whisper_app python=3.10 -y 
+conda activate whisper_app 
+conda update -n base -c defaults conda -y 
+pip install --upgrade pip 
+conda install pytorch torchvision torchaudio pytorch-cuda=12.4 -c pytorch -c nvidia 
+python -c "import torch; print(f'PyTorch version: {torch.__version__}'); print(f'Is CUDA available: {torch.cuda.is_available()}')"
+conda install -c conda-forge ffmpeg -y 
+pip install -U openai-whisper 
+pip install PyQt6
