@@ -7,3 +7,4 @@ python -c "import torch; print(f'PyTorch version: {torch.__version__}'); print(f
 conda install -c conda-forge ffmpeg -y 
 pip install -U openai-whisper 
 pip install PyQt6
+pip install pygame
